@@ -26,10 +26,6 @@ class Deck
         end
       end
 
-    def return(card)
-      @cards << (card)
-    end
-
     def shuffle
       5.times do
         @cards.shuffle!
@@ -40,5 +36,5 @@ class Deck
       card = @cards.pop
         discardPile.push(card)
     end
-    
+
 end
